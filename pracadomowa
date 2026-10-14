@@ -1,0 +1,224 @@
+import math
+from math import pi as PI
+
+
+# zad 1
+r = float(input("r = "))
+print(f"pole kuli wynosi {4/3*PI*r**3}")
+
+
+
+
+zad 2
+
+
+n = int(input("Podaj n: "))
+
+for i in range(n):
+    print("Kocham programować")
+
+
+zad 3
+
+liczba = 0
+suma = 0
+while True:
+    liczba = input("Podaj liczbę lub wpisz 'stop': ")
+
+    if liczba.lower() == "stop":
+        break
+
+    suma += float(liczba)
+
+print("Suma:", suma)
+
+
+zad 4
+
+ilosc = 0
+liczba = 0
+suma = 0
+while True:
+    liczba = input("Podaj liczbę lub wpisz 'stop': ")
+
+    if liczba.lower() == "stop":
+        break
+
+    suma += float(liczba)
+    ilosc += 1
+if ilosc > 0:
+    srednia = suma/ilosc
+    print("srednia artymetyczna:", srednia)
+
+
+
+zad 5
+
+n = int(input("Podaj n: "))
+
+suma = 0
+
+for i in range(n):
+    suma += 2 ** i
+
+print("Wynik:", suma)
+
+
+
+wersja 2
+
+
+zad 1
+
+Pp = float(input(Pole podstawy = ))
+H = float(input(podaj wysokosc ostroslupa = ))
+print(f"objetosc ostroslupa wynosi {1/3*Pp*H}")
+
+
+zad 2
+
+import random
+losowalicz = random.randint(0,20)
+print("mam liczbe, sprobuj odgadnac")
+for proba in range(1,4):
+    strzal = int(input("jaka obstawiasz liczbe: "))
+
+if strzal == losowalicz:
+    print("brawo wygrales!!")
+else:
+    print(f"niestety przegrales liczba to : {losowalicz}")
+
+zad 3
+
+liczby = []
+while True:
+    n = input("wprowadz element lub stop:")
+
+    if n.lower() == "stop":
+        break
+
+    liczby.append(float(n))
+
+wiekszy = max(liczby)
+print(wiekszy)
+
+zad 4
+
+a = float(input("podaj bok 1: "))
+b = float(input("podaj bok 2: "))
+c = float(input("podaj bok 3: "))
+wiekszybok = max(a,b,c)
+
+if a + b > wiekszybok:
+    if b + c > wiekszybok:
+        if c + a > wiekszybok:
+            print("tak")
+        else:
+            print("nie")
+    else:
+        print("nie")
+else:
+    print("nie")
+
+
+zad 5
+import random
+
+
+n = float(input("ile wynosi twoj bok: "))
+punkt1 = random.uniform(0,n)
+punkt2 = random.uniform(0,n)
+
+odcinek1 = punkt1
+odcinek2 = punkt2 - punkt1
+odcinek3 = n - punkt2
+odcinek1 + odcinek2 + odcinek3 == n
+print(odcinek1,odcinek2,odcinek3)
+
+
+
+
+
+
+
+
+
+
+
+wersja 3
+
+zad 1
+a = float(input("a = "))
+print(f"objetosc ostroslupa wynosi: {a**3}")
+
+
+
+zad 2
+import random
+
+from random import randint
+i = 0
+for (i) in range(10):
+    print(randint(1,200))
+    i += 1
+
+zad 3
+średnia = 0
+i = 0
+liczba = 0
+suma = 0
+while True:
+    liczba = input("Podaj liczbę lub wpisz stop: ")
+
+    if liczba.lower() == "stop":
+        break
+
+    suma += float(liczba)
+    i += 1
+if i > 0:
+    średnia = suma/i
+    print("srednia:" , średnia)
+
+print("Suma:", suma)
+
+
+zad 4
+
+
+
+
+a = float(input("podaj bok 1: "))
+b = float(input("podaj bok 2: "))
+c = float(input("podaj bok 3: "))
+
+boki = sorted([a,b,c])
+if a + b > c:
+    print("jest to figura trojkat")
+else:
+    print("nie jest to trojkat")
+
+while a + b > c:
+    if a**2 + b**2 == c**2:
+        print("jest to trojkat porstokatny")
+    else:
+        print("nie jest to tr prostokatny")
+        pass
+    if a == b:
+        print("jest to tr rownorameinny")
+        break
+    else:
+        print("jest to tr nie rownoramienny")
+        break
+    if a == b == c:
+        print("jest to tr rownoboczny")
+
+zad 5
+
+k = int(input("podaj licze k: "))
+m = int(input("podaj liczbe m: "))
+
+if m == 0:
+    print("nie dzieli sie przez zero")
+else:
+    reszta = k % m
+    print(f"reszta z dzielenia wynosi {reszta}")
